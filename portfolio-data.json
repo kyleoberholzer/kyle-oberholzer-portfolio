@@ -38,5 +38,21 @@
     "url": "https://www.linkedin.com/posts/foundation-zero_balancing-modern-tech-and-tradition-activity-7485996355983872001-bcYF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/pampus-renewables-vs-heritage.jpg",
     "featured": false
+  },
+  {
+    "title": "Solar Duck — solar at sea",
+    "subtitle": "Founder mini-documentary",
+    "platform": "YouTube",
+    "url": "https://youtu.be/C0O1SToCUBk?si=W7drntJ8DhxZEyYI",
+    "image": "assets/images/portfolio/solar-duck-solar-at-sea.jpg",
+    "featured": false
+  },
+  {
+    "title": "MOcean — hybrid offshore energy",
+    "subtitle": "Founder mini-documentary",
+    "platform": "YouTube",
+    "url": "https://youtu.be/YQpPQ5hS4IY?si=Ju8cUmw6wD93GGjj",
+    "image": "assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
+    "featured": false
   }
 ]
