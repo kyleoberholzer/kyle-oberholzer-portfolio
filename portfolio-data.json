@@ -11,9 +11,10 @@
     "selected": true
   },
   {
-    "title": "Flocean — deep sea desalination",
+    "title": "Flocean — can the ocean floor solve the water crisis?",
     "format": "Mini-documentary",
     "length": "4 min",
+    "rating": 7,
     "platform": "YouTube",
     "url": "https://youtu.be/YYgQE3t8AMI?si=rMVaIGTZfqdKcsO-",
     "image": "assets/images/portfolio/flocean-deep-sea-desalination.jpg",
@@ -21,9 +22,11 @@
     "selected": true
   },
   {
-    "title": "Desolenator — water from data centers",
+    "title": "Desolenator — a revolutionary take on desalination",
     "format": "Mini-documentary",
-    "length": "4 min",
+    "length": "5 min",
+    "note": "45,000+ views",
+    "rating": 9,
     "platform": "YouTube",
     "url": "https://youtu.be/0DzLiKUpkr0?si=siY65FdlKPJ4VOej",
     "image": "assets/images/portfolio/desolenator-water-from-data-centers.jpg",
@@ -51,9 +54,10 @@
     "selected": false
   },
   {
-    "title": "Solar Duck — solar at sea",
+    "title": "Solar Duck — a new frontier for solar energy",
     "format": "Mini-documentary",
-    "length": "4 min",
+    "length": "3 min",
+    "rating": 5,
     "platform": "YouTube",
     "url": "https://youtu.be/C0O1SToCUBk?si=W7drntJ8DhxZEyYI",
     "image": "assets/images/portfolio/solar-duck-solar-at-sea.jpg",
@@ -61,9 +65,11 @@
     "selected": false
   },
   {
-    "title": "MOcean — hybrid offshore energy",
+    "title": "MOcean — a new era for ocean power",
     "format": "Mini-documentary",
     "length": "4 min",
+    "note": "10,000+ views",
+    "rating": 9,
     "platform": "YouTube",
     "url": "https://youtu.be/YQpPQ5hS4IY?si=Ju8cUmw6wD93GGjj",
     "image": "assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
