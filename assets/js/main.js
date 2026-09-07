@@ -13,6 +13,14 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   navToggle.setAttribute('aria-expanded', 'false');
 }));
 
+// ---------- Nav goes opaque once the page scrolls ----------
+const navEl = document.querySelector('.nav');
+function updateNavScrolled() {
+  navEl.classList.toggle('scrolled', window.scrollY > 20);
+}
+updateNavScrolled();
+window.addEventListener('scroll', updateNavScrolled, { passive: true });
+
 // ---------- External link icon (reused for every card) ----------
 const externalIconSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>`;
 
