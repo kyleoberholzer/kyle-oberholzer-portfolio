@@ -54,5 +54,13 @@
     "url": "https://youtu.be/YQpPQ5hS4IY?si=Ju8cUmw6wD93GGjj",
     "image": "assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
     "featured": false
+  },
+  {
+    "title": "Shifted Energy — storing sunshine with air and water",
+    "subtitle": "Platform-native short",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/kyleoberholzer_compressed-air-energy-storage-has-a-thermodynamics-activity-7485954484515463169-UGuu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
+    "featured": false
   }
 ]
