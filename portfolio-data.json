@@ -89,5 +89,65 @@
     "url": "https://www.linkedin.com/posts/kyleoberholzer_can-we-harvest-energy-from-rivers-without-activity-7475488430152454144-Yaqg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/gkinetic-river-energy-without-dams.jpg",
     "featured": false
+  },
+  {
+    "title": "Carbo-Link — a world-first \"breathing mast\"",
+    "format": "YouTube short",
+    "length": "3 min",
+    "note": "9,000+ views",
+    "platform": "YouTube",
+    "url": "https://youtu.be/X1ap7VREz3M?si=AgBf2fQD4XhVqs0K",
+    "image": "assets/images/portfolio/carbolink-breathing-mast.jpg",
+    "featured": false
+  },
+  {
+    "title": "Hundested — why this all-electric hybrid propulsion matters",
+    "format": "YouTube short",
+    "length": "3 min",
+    "note": "1,500+ views",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=yIhY4o5pFYg&t=14s",
+    "image": "assets/images/portfolio/hundested-hybrid-propulsion.jpg",
+    "featured": false
+  },
+  {
+    "title": "Termodinamica — a new approach to marine ventilation",
+    "format": "YouTube short",
+    "length": "3 min",
+    "note": "1,200+ views",
+    "platform": "YouTube",
+    "url": "https://youtu.be/31vlk7vCa-A?si=-9m3rly-Fhdn2gW2",
+    "image": "assets/images/portfolio/termodinamica-marine-ventilation.jpg",
+    "featured": false
+  },
+  {
+    "title": "Reckmann — an all-electric solution to an all-electric problem",
+    "format": "YouTube short",
+    "length": "2 min",
+    "note": "1,000+ views",
+    "platform": "YouTube",
+    "url": "https://youtu.be/3lGsGCC258Q?si=Tc3uRoeo1aFs8s9u",
+    "image": "assets/images/portfolio/reckmann-electric-furler.jpg",
+    "featured": false
+  },
+  {
+    "title": "Royal Maritiem — marine glazing, what's next?",
+    "format": "YouTube short",
+    "length": "2 min",
+    "note": "2,000+ views",
+    "platform": "YouTube",
+    "url": "https://youtu.be/gYzcuEEzEBY?si=pYkXCzSzBOWbDKcM",
+    "image": "assets/images/portfolio/royal-maritiem-marine-glazing.jpg",
+    "featured": false
+  },
+  {
+    "title": "Mitosolar — PVT panels at sea",
+    "format": "YouTube short",
+    "length": "2 min",
+    "note": "2,800+ views",
+    "platform": "YouTube",
+    "url": "https://youtu.be/MrSVeb8yguM?si=4xxpr2Yv2WBnn8fk",
+    "image": "assets/images/portfolio/mitosolar-pvt-panels-at-sea.jpg",
+    "featured": false
   }
 ]
