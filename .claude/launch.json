@@ -3,9 +3,10 @@
   "configurations": [
     {
       "name": "portfolio",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "/Users/kyleoberholzer/Desktop/Portfolio websit test/kyle-oberholzer-portfolio"],
-      "port": 8000
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "python3 -m http.server \"$PORT\" --directory \"/Users/kyleoberholzer/Desktop/Portfolio websit test/kyle-oberholzer-portfolio\""],
+      "port": 8000,
+      "autoPort": true
     }
   ]
 }
