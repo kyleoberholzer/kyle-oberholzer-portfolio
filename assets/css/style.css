@@ -202,6 +202,25 @@
     background-repeat:no-repeat;
   }
 
+  /* ---------- EXPERIMENT: thin frame lines (rivan.com-style) ---------- */
+  :root{ --frame-inset:16px; --line-on-light:rgba(10,20,27,0.14); }
+  .hero, .section, footer{ position:relative; }
+  .section, footer{ border-top:1px solid var(--line-on-dark); }
+  .hero::before, .hero::after,
+  .section::before, .section::after,
+  footer::before, footer::after{
+    content:'';
+    position:absolute;
+    top:0; bottom:0;
+    width:1px;
+    background:var(--line-on-dark);
+    pointer-events:none;
+  }
+  .hero::before, .section::before, footer::before{ left:var(--frame-inset); }
+  .hero::after, .section::after, footer::after{ right:var(--frame-inset); }
+  .section.light{ border-top-color:var(--line-on-light); }
+  .section.light::before, .section.light::after{ background:var(--line-on-light); }
+
   .section-grid{
     display:grid;
     grid-template-columns:0.85fr 1.15fr;
