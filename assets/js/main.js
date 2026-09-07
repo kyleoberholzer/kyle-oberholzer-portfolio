@@ -25,15 +25,17 @@ function buildCard(item) {
   a.rel = 'noopener noreferrer';
 
   const ctaLabel = item.platform === 'LinkedIn' ? 'View on LinkedIn' : `Watch on ${item.platform}`;
+  const meta = item.note ? `${item.format} · ${item.length} · ${item.note}` : `${item.format} · ${item.length}`;
 
   a.innerHTML = `
     <div class="card-media">
       <img src="${item.image}" alt="${item.title}" loading="lazy">
       <span class="card-platform">${item.platform}</span>
+      <span class="card-length">${item.length}</span>
     </div>
     <div class="card-body">
       <h3>${item.title}</h3>
-      <p class="card-sub">${item.subtitle}</p>
+      <p class="card-sub">${meta}</p>
       <span class="card-cta">${ctaLabel} ${externalIconSVG}</span>
     </div>
   `;

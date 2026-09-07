@@ -39,13 +39,21 @@ python3 -m http.server 8000
    ```json
    {
      "title": "Project name — short description",
-     "subtitle": "Founder mini-documentary",
+     "format": "Mini-documentary",
+     "length": "4 min",
      "platform": "YouTube",
      "url": "https://youtu.be/xxxxxxxx",
      "image": "assets/images/portfolio/project-name-short-description.jpg",
      "featured": false
    }
    ```
+   `format` is a short label like `Mini-documentary`, `LinkedIn short`, or
+   `Video podcast`. `length` is the actual runtime (`"2 min"`, `"30 min"`) —
+   both render on the card and as a duration badge on the thumbnail, so use
+   real figures, not estimates. An optional `"note"` field (e.g.
+   `"50,000+ views"`) appends after the length if there's a standout stat
+   worth surfacing.
+
    Set `"featured": true` on at most one item at a time — it renders as the
    larger, wide card at the top of the grid.
 3. Preview locally (see above), then commit and push:
