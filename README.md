@@ -6,7 +6,8 @@ a new portfolio piece each month is a two-file change: one image, one JSON entry
 ## Structure
 
 ```
-index.html                       Page structure — rarely needs to change
+index.html                       Homepage — a curated selection of work
+work.html                         Full portfolio — every item, always
 portfolio-data.json               The list of every portfolio item (edit this monthly)
 assets/
   css/style.css                   All styling
@@ -15,6 +16,12 @@ assets/
     site/                         Fixed site images: hero, portrait, about photo
     portfolio/                    One thumbnail per project
 ```
+
+Both pages render from the same `portfolio-data.json` via the same
+`assets/js/main.js`. Which items show where is controlled by the grid's
+`data-scope` attribute: `index.html`'s grid is `data-scope="selected"` (only
+items with `"selected": true`), `work.html`'s grid is `data-scope="all"`
+(every item, regardless of the flag).
 
 ## Previewing locally
 
@@ -44,7 +51,8 @@ python3 -m http.server 8000
      "platform": "YouTube",
      "url": "https://youtu.be/xxxxxxxx",
      "image": "assets/images/portfolio/project-name-short-description.jpg",
-     "featured": false
+     "featured": false,
+     "selected": false
    }
    ```
    `format` is a short label like `Mini-documentary`, `LinkedIn short`, or
@@ -55,7 +63,11 @@ python3 -m http.server 8000
    worth surfacing.
 
    Set `"featured": true` on at most one item at a time — it renders as the
-   larger, wide card at the top of the grid.
+   larger, wide card at the top of the grid (on whichever page shows it).
+
+   Set `"selected": true` if this item should also appear in the homepage's
+   "Selected work" teaser, not just on `work.html`. Every item always shows
+   on `work.html` regardless of this flag.
 3. Preview locally (see above), then commit and push:
    ```bash
    git add .

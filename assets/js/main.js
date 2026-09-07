@@ -43,12 +43,19 @@ function buildCard(item) {
 }
 
 // ---------- Load data and render grid ----------
+// The grid's data-scope attribute controls what shows:
+//   "selected" (default, used on the homepage teaser) — only items with selected:true
+//   "all" (used on work.html) — every item
 async function renderPortfolio() {
   const grid = document.getElementById('portfolio-grid');
+  if (!grid) return;
+  const scope = grid.dataset.scope || 'selected';
   try {
     const res = await fetch('portfolio-data.json');
     if (!res.ok) throw new Error('Could not load portfolio-data.json');
-    const items = await res.json();
+    let items = await res.json();
+
+    if (scope === 'selected') items = items.filter(item => item.selected);
 
     // Featured items first, preserving the rest of the given order
     items.sort((a, b) => (b.featured === true) - (a.featured === true));

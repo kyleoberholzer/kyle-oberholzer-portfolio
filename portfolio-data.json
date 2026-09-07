@@ -7,7 +7,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/S-HdzX0BZCc?si=8WQd9iwYv2RJj-VW",
     "image": "assets/images/portfolio/pampus-off-grid-energy.jpg",
-    "featured": true
+    "featured": true,
+    "selected": true
   },
   {
     "title": "Flocean — deep sea desalination",
@@ -16,7 +17,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/YYgQE3t8AMI?si=rMVaIGTZfqdKcsO-",
     "image": "assets/images/portfolio/flocean-deep-sea-desalination.jpg",
-    "featured": false
+    "featured": false,
+    "selected": true
   },
   {
     "title": "Desolenator — water from data centers",
@@ -25,7 +27,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/0DzLiKUpkr0?si=siY65FdlKPJ4VOej",
     "image": "assets/images/portfolio/desolenator-water-from-data-centers.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Off grid — surplus energy",
@@ -34,7 +37,8 @@
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/foundation-zero_rethinking-renewable-energy-use-activity-7478067686506303488-P75a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/pampus-surplus-energy.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Renewables vs. heritage",
@@ -43,7 +47,8 @@
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/foundation-zero_balancing-modern-tech-and-tradition-activity-7485996355983872001-bcYF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/pampus-renewables-vs-heritage.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Solar Duck — solar at sea",
@@ -52,7 +57,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/C0O1SToCUBk?si=W7drntJ8DhxZEyYI",
     "image": "assets/images/portfolio/solar-duck-solar-at-sea.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "MOcean — hybrid offshore energy",
@@ -61,7 +67,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/YQpPQ5hS4IY?si=Ju8cUmw6wD93GGjj",
     "image": "assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
-    "featured": false
+    "featured": false,
+    "selected": true
   },
   {
     "title": "Shifted Energy — storing sunshine with air and water",
@@ -70,7 +77,8 @@
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/kyleoberholzer_compressed-air-energy-storage-has-a-thermodynamics-activity-7485954484515463169-UGuu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
-    "featured": false
+    "featured": false,
+    "selected": true
   },
   {
     "title": "GKinetic — energy from slow flowing rivers",
@@ -79,7 +87,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/6CPyxGxHNDs?si=5ZGWf_Iw-N4pxf4D",
     "image": "assets/images/portfolio/gkinetic-energy-from-slow-flowing-rivers.jpg",
-    "featured": false
+    "featured": false,
+    "selected": true
   },
   {
     "title": "GKinetic — river energy without dams",
@@ -88,7 +97,8 @@
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/kyleoberholzer_can-we-harvest-energy-from-rivers-without-activity-7475488430152454144-Yaqg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/gkinetic-river-energy-without-dams.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Carbo-Link — a world-first \"breathing mast\"",
@@ -98,7 +108,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/X1ap7VREz3M?si=AgBf2fQD4XhVqs0K",
     "image": "assets/images/portfolio/carbolink-breathing-mast.jpg",
-    "featured": false
+    "featured": false,
+    "selected": true
   },
   {
     "title": "Hundested — why this all-electric hybrid propulsion matters",
@@ -108,7 +119,8 @@
     "platform": "YouTube",
     "url": "https://www.youtube.com/watch?v=yIhY4o5pFYg&t=14s",
     "image": "assets/images/portfolio/hundested-hybrid-propulsion.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Termodinamica — a new approach to marine ventilation",
@@ -118,7 +130,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/31vlk7vCa-A?si=-9m3rly-Fhdn2gW2",
     "image": "assets/images/portfolio/termodinamica-marine-ventilation.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Reckmann — an all-electric solution to an all-electric problem",
@@ -128,7 +141,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/3lGsGCC258Q?si=Tc3uRoeo1aFs8s9u",
     "image": "assets/images/portfolio/reckmann-electric-furler.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Royal Maritiem — marine glazing, what's next?",
@@ -138,7 +152,8 @@
     "platform": "YouTube",
     "url": "https://youtu.be/gYzcuEEzEBY?si=pYkXCzSzBOWbDKcM",
     "image": "assets/images/portfolio/royal-maritiem-marine-glazing.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   },
   {
     "title": "Mitosolar — PVT panels at sea",
@@ -148,6 +163,7 @@
     "platform": "YouTube",
     "url": "https://youtu.be/MrSVeb8yguM?si=4xxpr2Yv2WBnn8fk",
     "image": "assets/images/portfolio/mitosolar-pvt-panels-at-sea.jpg",
-    "featured": false
+    "featured": false,
+    "selected": false
   }
 ]

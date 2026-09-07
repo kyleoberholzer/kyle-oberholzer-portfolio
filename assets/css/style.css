@@ -313,6 +313,23 @@
     grid-template-columns:repeat(3, 1fr);
     gap:28px;
   }
+
+  .view-all-wrap{
+    text-align:center;
+    margin-top:56px;
+  }
+  .view-all-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:15px;
+    color:var(--orange);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    transition:border-color 0.2s ease;
+  }
+  .view-all-link:hover{border-color:var(--orange);}
   @media (max-width:900px){
     .grid{grid-template-columns:repeat(2, 1fr);}
   }
