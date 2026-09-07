@@ -60,10 +60,19 @@ or two of the push.
 
 ## Before going fully live
 
-- Replace the placeholder email in the footer (`hello@kyleoberholzer.com`)
-  in `index.html`.
-- Replace the placeholder LinkedIn/YouTube footer links in `index.html`
-  with your real profile URLs.
+- Not yet pushed to GitHub — working locally until the content and copy are
+  settled. See "Publishing" below when ready.
 - Add a `CNAME` file (just the domain name, one line) once you're ready to
   point your custom domain at GitHub Pages, and update the DNS records at
   your registrar accordingly.
+
+## Publishing (when ready)
+
+This repo is git-initialized locally but has no remote yet. To publish:
+
+```bash
+gh repo create kyleoberholzer/kyle-oberholzer-portfolio --public --source=. --remote=origin --push
+```
+
+Then enable GitHub Pages (Settings → Pages → Deploy from branch → `main` /
+`root`) so it goes live at `kyleoberholzer.github.io/kyle-oberholzer-portfolio`.
