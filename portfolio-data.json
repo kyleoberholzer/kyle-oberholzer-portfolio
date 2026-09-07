@@ -62,5 +62,21 @@
     "url": "https://www.linkedin.com/posts/kyleoberholzer_compressed-air-energy-storage-has-a-thermodynamics-activity-7485954484515463169-UGuu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
     "featured": false
+  },
+  {
+    "title": "GKinetic — energy from slow flowing rivers",
+    "subtitle": "30-minute video podcast",
+    "platform": "YouTube",
+    "url": "https://youtu.be/6CPyxGxHNDs?si=5ZGWf_Iw-N4pxf4D",
+    "image": "assets/images/portfolio/gkinetic-energy-from-slow-flowing-rivers.jpg",
+    "featured": false
+  },
+  {
+    "title": "GKinetic — river energy without dams",
+    "subtitle": "Platform-native short",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/kyleoberholzer_can-we-harvest-energy-from-rivers-without-activity-7475488430152454144-Yaqg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "assets/images/portfolio/gkinetic-river-energy-without-dams.jpg",
+    "featured": false
   }
 ]
