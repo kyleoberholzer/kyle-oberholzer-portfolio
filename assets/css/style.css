@@ -196,6 +196,11 @@
   .section.dark{background:var(--navy-950); color:var(--paper);}
   .section.panel{background:var(--navy-900);}
   .section.light{background:var(--paper); color:var(--ink);}
+  .section.photo{
+    background-size:cover;
+    background-position:center 20%;
+    background-repeat:no-repeat;
+  }
 
   .section-grid{
     display:grid;
@@ -254,23 +259,6 @@
     max-width:40ch;
   }
 
-  /* deep tech section image */
-  .figure-frame{
-    position:relative;
-    border-radius:2px;
-    overflow:hidden;
-    aspect-ratio:4/5;
-  }
-  .figure-frame img{
-    width:100%; height:100%; object-fit:cover;
-  }
-  .figure-caption{
-    margin-top:14px;
-    font-size:13px;
-    color:var(--muted-light);
-    max-width:36ch;
-  }
-
   .list-plain{
     list-style:none;
     margin:32px 0 0;
@@ -300,6 +288,10 @@
     margin-bottom:4px;
   }
   .list-plain p{margin:0; font-size:14.5px; color:var(--muted-light); max-width:48ch;}
+
+  .section.dark .list-plain li, .section.panel .list-plain li{border-color:var(--line-on-dark);}
+  .section.dark .list-plain .n, .section.panel .list-plain .n{color:var(--orange);}
+  .section.dark .list-plain p, .section.panel .list-plain p{color:var(--muted-dark);}
 
   /* ---------- PORTFOLIO ---------- */
   .portfolio-head{
