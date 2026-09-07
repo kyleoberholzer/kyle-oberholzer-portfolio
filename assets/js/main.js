@@ -1,0 +1,62 @@
+// ---------- Footer year ----------
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---------- Mobile nav toggle ----------
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+}));
+
+// ---------- External link icon (reused for every card) ----------
+const externalIconSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>`;
+
+// ---------- Build one card ----------
+function buildCard(item) {
+  const a = document.createElement('a');
+  a.className = 'card' + (item.featured ? ' wide' : '');
+  a.href = item.url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+
+  const ctaLabel = item.platform === 'LinkedIn' ? 'View on LinkedIn' : `Watch on ${item.platform}`;
+
+  a.innerHTML = `
+    <div class="card-media">
+      <img src="${item.image}" alt="${item.title}" loading="lazy">
+      <span class="card-platform">${item.platform}</span>
+    </div>
+    <div class="card-body">
+      <h3>${item.title}</h3>
+      <p class="card-sub">${item.subtitle}</p>
+      <span class="card-cta">${ctaLabel} ${externalIconSVG}</span>
+    </div>
+  `;
+  return a;
+}
+
+// ---------- Load data and render grid ----------
+async function renderPortfolio() {
+  const grid = document.getElementById('portfolio-grid');
+  try {
+    const res = await fetch('portfolio-data.json');
+    if (!res.ok) throw new Error('Could not load portfolio-data.json');
+    const items = await res.json();
+
+    // Featured items first, preserving the rest of the given order
+    items.sort((a, b) => (b.featured === true) - (a.featured === true));
+
+    grid.innerHTML = '';
+    items.forEach(item => grid.appendChild(buildCard(item)));
+  } catch (err) {
+    grid.innerHTML = '<p style="color:#c7cdc7;">Could not load portfolio items. If you are viewing this file directly (file://), run a local server instead — see README.md.</p>';
+    console.error(err);
+  }
+}
+
+renderPortfolio();

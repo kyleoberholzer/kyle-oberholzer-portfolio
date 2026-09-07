@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Off grid energy — Fort Pampus",
+    "subtitle": "10-minute mini-documentary · 50,000+ views",
+    "platform": "YouTube",
+    "url": "https://youtu.be/S-HdzX0BZCc?si=8WQd9iwYv2RJj-VW",
+    "image": "assets/images/portfolio/pampus-off-grid-energy.jpg",
+    "featured": true
+  },
+  {
+    "title": "Flocean — deep sea desalination",
+    "subtitle": "Founder mini-documentary",
+    "platform": "YouTube",
+    "url": "https://youtu.be/YYgQE3t8AMI?si=rMVaIGTZfqdKcsO-",
+    "image": "assets/images/portfolio/flocean-deep-sea-desalination.jpg",
+    "featured": false
+  },
+  {
+    "title": "Desolenator — water from data centers",
+    "subtitle": "Founder mini-documentary",
+    "platform": "YouTube",
+    "url": "https://youtu.be/0DzLiKUpkr0?si=siY65FdlKPJ4VOej",
+    "image": "assets/images/portfolio/desolenator-water-from-data-centers.jpg",
+    "featured": false
+  },
+  {
+    "title": "Off grid — surplus energy",
+    "subtitle": "Platform-native short",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/foundation-zero_rethinking-renewable-energy-use-activity-7478067686506303488-P75a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "assets/images/portfolio/pampus-surplus-energy.jpg",
+    "featured": false
+  },
+  {
+    "title": "Renewables vs. heritage",
+    "subtitle": "Platform-native short",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/foundation-zero_balancing-modern-tech-and-tradition-activity-7485996355983872001-bcYF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "assets/images/portfolio/pampus-renewables-vs-heritage.jpg",
+    "featured": false
+  }
+]
