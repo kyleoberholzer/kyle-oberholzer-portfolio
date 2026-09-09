@@ -57,8 +57,8 @@ python3 -m http.server 8000
    ```
    `format` is a short label like `Mini-documentary`, `LinkedIn short`, or
    `Video podcast`. `length` is the actual runtime (`"2 min"`, `"30 min"`) —
-   both render on the card and as a duration badge on the thumbnail, so use
-   real figures, not estimates. An optional `"note"` field (e.g.
+   both render as text under the title, so use real figures, not estimates.
+   An optional `"note"` field (e.g.
    `"50,000+ views"`) appends after the length if there's a standout stat
    worth surfacing.
 

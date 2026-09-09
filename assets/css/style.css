@@ -384,32 +384,6 @@
   }
   .card:hover .card-media img{transform:scale(1.055);}
 
-  .card-platform{
-    position:absolute;
-    top:12px; right:12px;
-    background:rgba(10,20,27,0.72);
-    color:var(--paper);
-    font-size:11px;
-    letter-spacing:0.02em;
-    padding:5px 9px;
-    border-radius:2px;
-    font-family:'Space Grotesk',sans-serif;
-    backdrop-filter:blur(2px);
-  }
-
-  .card-length{
-    position:absolute;
-    bottom:12px; right:12px;
-    background:rgba(10,20,27,0.72);
-    color:var(--paper);
-    font-size:11px;
-    letter-spacing:0.02em;
-    padding:5px 9px;
-    border-radius:2px;
-    font-family:'Space Grotesk',sans-serif;
-    backdrop-filter:blur(2px);
-  }
-
   .card-body{
     padding:18px 20px 20px;
   }
