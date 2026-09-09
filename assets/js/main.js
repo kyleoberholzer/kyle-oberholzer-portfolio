@@ -21,6 +21,21 @@ function updateNavScrolled() {
 updateNavScrolled();
 window.addEventListener('scroll', updateNavScrolled, { passive: true });
 
+// ---------- Audience word rotator (homepage only) ----------
+const audienceWord = document.getElementById('audienceWord');
+if (audienceWord) {
+  const audiences = ['investors', 'incubators', 'hubs'];
+  let audienceIndex = 0;
+  setInterval(() => {
+    audienceWord.classList.add('is-swapping');
+    setTimeout(() => {
+      audienceIndex = (audienceIndex + 1) % audiences.length;
+      audienceWord.textContent = audiences[audienceIndex];
+      audienceWord.classList.remove('is-swapping');
+    }, 300);
+  }, 2000);
+}
+
 // ---------- External link icon (reused for every card) ----------
 const externalIconSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>`;
 
