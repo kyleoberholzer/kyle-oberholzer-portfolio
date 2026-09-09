@@ -171,5 +171,36 @@
     "image": "assets/images/portfolio/mitosolar-pvt-panels-at-sea.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "Optimising for partial shade",
+    "format": "Mini-documentary",
+    "length": "10 min",
+    "rating": 7,
+    "platform": "YouTube",
+    "url": "https://youtu.be/JO3vh1ASLRI?si=Pw50rTgd6unr4Qt_",
+    "image": "assets/images/portfolio/long-optimising-for-partial-shade.jpg",
+    "featured": false,
+    "selected": false
+  },
+  {
+    "title": "Optimising for partial shade — promo",
+    "format": "LinkedIn short",
+    "length": "1 min",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/foundation-zero_did-you-know-that-when-solar-panels-are-partially-activity-7310976373886496768-ANvr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "assets/images/portfolio/optimising-for-partial-shade-promo.jpg",
+    "featured": false,
+    "selected": false
+  },
+  {
+    "title": "PCB prototyping",
+    "format": "LinkedIn short",
+    "length": "2 min",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/foundation-zero_building-a-brand-new-printed-circuit-board-activity-7328035527528505344-UKyI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "assets/images/portfolio/pcb-prototyping.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
