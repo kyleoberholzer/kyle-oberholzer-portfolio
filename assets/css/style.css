@@ -203,16 +203,16 @@
   }
 
   /* ---------- EXPERIMENT: thin frame lines (rivan.com-style) ---------- */
-  :root{ --frame-inset:16px; --line-on-light:rgba(10,20,27,0.14); }
+  :root{ --frame-inset:16px; --frame-stroke:2px; --line-on-light:rgba(10,20,27,0.14); }
   .hero, .section, footer{ position:relative; }
-  .section, footer{ border-top:1px solid var(--line-on-dark); }
+  .section, footer{ border-top:var(--frame-stroke) solid var(--line-on-dark); }
   .hero::before, .hero::after,
   .section::before, .section::after,
   footer::before, footer::after{
     content:'';
     position:absolute;
     top:0; bottom:0;
-    width:1px;
+    width:var(--frame-stroke);
     background:var(--line-on-dark);
     pointer-events:none;
   }
@@ -502,7 +502,7 @@
   footer{
     background:var(--navy-950);
     padding:64px 0 40px;
-    border-top:1px solid var(--line-on-dark);
+    border-top:var(--frame-stroke) solid var(--line-on-dark);
   }
   .footer-row{
     display:flex;
