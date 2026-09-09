@@ -24,7 +24,7 @@ window.addEventListener('scroll', updateNavScrolled, { passive: true });
 // ---------- Audience word rotator (homepage only) ----------
 const audienceWord = document.getElementById('audienceWord');
 if (audienceWord) {
-  const audiences = ['investors', 'incubators', 'hubs'];
+  const audiences = ['investors', 'incubators', 'hubs', 'family offices'];
   let audienceIndex = 0;
   setInterval(() => {
     audienceWord.classList.add('is-swapping');

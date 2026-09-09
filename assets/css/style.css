@@ -222,20 +222,17 @@
   .section.light::before, .section.light::after{ background:var(--line-on-light); }
 
   /* ---------- AUDIENCE ROTATOR ---------- */
-  .audience-rotator{
-    padding:64px 0;
-    text-align:center;
-  }
   .audience-rotator-heading{
     font-family:'Space Grotesk',sans-serif;
-    font-weight:600;
-    font-size:clamp(1.9rem, 5vw, 3.2rem);
-    margin:0;
-    letter-spacing:-0.01em;
+    font-weight:500;
+    font-size:clamp(1.05rem, 2vw, 1.3rem);
+    margin:0 0 14px;
+    color:var(--muted-dark);
   }
   .audience-rotator-word{
     display:inline-block;
     color:var(--orange);
+    font-weight:600;
     transition:opacity 0.3s ease, transform 0.3s ease;
   }
   .audience-rotator-word.is-swapping{
