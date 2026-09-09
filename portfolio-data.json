@@ -202,5 +202,16 @@
     "image": "assets/images/portfolio/pcb-prototyping.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "Making power while sailing",
+    "format": "Instagram short",
+    "length": "2 min",
+    "rating": 5,
+    "platform": "Instagram",
+    "url": "https://www.instagram.com/reel/C9kOS7ftZR7/?hl=en",
+    "image": "assets/images/portfolio/making-power-while-sailing.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
