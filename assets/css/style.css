@@ -353,7 +353,7 @@
   .portfolio-head{
     display:flex;
     justify-content:space-between;
-    align-items:flex-end;
+    align-items:flex-start;
     gap:24px;
     flex-wrap:wrap;
     margin-bottom:56px;
