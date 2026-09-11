@@ -144,6 +144,7 @@
   }
   .hero-eyebrow{
     font-size:14px;
+    font-weight:600;
     color:var(--orange);
     font-family:'Space Grotesk',sans-serif;
     margin:0 0 18px;
