@@ -487,9 +487,8 @@
     margin-top:36px;
     border-radius:2px;
     overflow:hidden;
-    aspect-ratio:16/9;
   }
-  .about-bts img{width:100%; height:100%; object-fit:cover;}
+  .about-bts img{width:100%; height:auto; display:block;}
 
   .kit-row{
     margin-top:36px;
