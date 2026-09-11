@@ -525,6 +525,7 @@
     transition:border-color 0.2s ease;
   }
   .footer-email:hover{border-color:var(--orange);}
+  .footer-email-alt{margin-top:8px; font-size:1rem;}
   .footer-meta{
     font-size:13px;
     color:var(--muted-dark);
