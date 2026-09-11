@@ -526,13 +526,6 @@
   }
   .footer-email:hover{border-color:var(--orange);}
   .footer-email-alt{margin-top:8px; font-size:1rem;}
-  .footer-meta{
-    font-size:13px;
-    color:var(--muted-dark);
-    text-align:right;
-  }
-  .footer-meta a{text-decoration:none; opacity:0.8;}
-  .footer-meta a:hover{opacity:1;}
   .footer-bottom{
     margin-top:56px;
     padding-top:24px;
