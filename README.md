@@ -8,6 +8,7 @@ a new portfolio piece each month is a two-file change: one image, one JSON entry
 ```
 index.html                       Homepage — a curated selection of work
 work.html                         Full portfolio — every item, always
+conference/index.html             Unlisted outreach page — Katapult pieces only
 portfolio-data.json               The list of every portfolio item (edit this monthly)
 assets/
   css/style.css                   All styling
@@ -17,11 +18,15 @@ assets/
     portfolio/                    One thumbnail per project
 ```
 
-Both pages render from the same `portfolio-data.json` via the same
+Every page renders from the same `portfolio-data.json` via the same
 `assets/js/main.js`. Which items show where is controlled by the grid's
-`data-scope` attribute: `index.html`'s grid is `data-scope="selected"` (only
-items with `"selected": true`), `work.html`'s grid is `data-scope="all"`
-(every item, regardless of the flag).
+`data-scope` attribute: `data-scope="all"` (used on `work.html`) shows every
+item regardless of flags; any other value, e.g. `data-scope="selected"`
+(`index.html`'s homepage teaser) or `data-scope="katapult"`
+(`conference/index.html`'s outreach page), shows only items where that exact
+field is `true` in their JSON entry. To make a new curated page, add a new
+boolean field to the items you want on it and point a grid's `data-scope` at
+that field name — no JS changes needed.
 
 ## Previewing locally
 
@@ -50,7 +55,7 @@ python3 -m http.server 8000
      "length": "4 min",
      "platform": "YouTube",
      "url": "https://youtu.be/xxxxxxxx",
-     "image": "assets/images/portfolio/project-name-short-description.jpg",
+     "image": "/assets/images/portfolio/project-name-short-description.jpg",
      "featured": false,
      "selected": false
    }

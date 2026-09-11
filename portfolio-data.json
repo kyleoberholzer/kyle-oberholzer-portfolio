@@ -6,7 +6,7 @@
     "note": "50,000+ views",
     "platform": "YouTube",
     "url": "https://youtu.be/S-HdzX0BZCc?si=8WQd9iwYv2RJj-VW",
-    "image": "assets/images/portfolio/pampus-off-grid-energy.jpg",
+    "image": "/assets/images/portfolio/pampus-off-grid-energy.jpg",
     "featured": true,
     "selected": true
   },
@@ -17,9 +17,10 @@
     "rating": 7,
     "platform": "YouTube",
     "url": "https://youtu.be/YYgQE3t8AMI?si=rMVaIGTZfqdKcsO-",
-    "image": "assets/images/portfolio/flocean-deep-sea-desalination.jpg",
+    "image": "/assets/images/portfolio/flocean-deep-sea-desalination.jpg",
     "featured": false,
-    "selected": true
+    "selected": true,
+    "katapult": true
   },
   {
     "title": "A revolutionary take on desalination",
@@ -29,9 +30,10 @@
     "rating": 9,
     "platform": "YouTube",
     "url": "https://youtu.be/0DzLiKUpkr0?si=siY65FdlKPJ4VOej",
-    "image": "assets/images/portfolio/desolenator-water-from-data-centers.jpg",
+    "image": "/assets/images/portfolio/desolenator-water-from-data-centers.jpg",
     "featured": false,
-    "selected": false
+    "selected": false,
+    "katapult": true
   },
   {
     "title": "Off grid — surplus energy",
@@ -39,7 +41,7 @@
     "length": "2 min",
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/foundation-zero_rethinking-renewable-energy-use-activity-7478067686506303488-P75a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
-    "image": "assets/images/portfolio/pampus-surplus-energy.jpg",
+    "image": "/assets/images/portfolio/pampus-surplus-energy.jpg",
     "featured": false,
     "selected": false
   },
@@ -49,7 +51,7 @@
     "length": "2 min",
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/foundation-zero_balancing-modern-tech-and-tradition-activity-7485996355983872001-bcYF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
-    "image": "assets/images/portfolio/pampus-renewables-vs-heritage.jpg",
+    "image": "/assets/images/portfolio/pampus-renewables-vs-heritage.jpg",
     "featured": false,
     "selected": false
   },
@@ -60,9 +62,10 @@
     "rating": 5,
     "platform": "YouTube",
     "url": "https://youtu.be/C0O1SToCUBk?si=W7drntJ8DhxZEyYI",
-    "image": "assets/images/portfolio/solar-duck-solar-at-sea.jpg",
+    "image": "/assets/images/portfolio/solar-duck-solar-at-sea.jpg",
     "featured": false,
-    "selected": false
+    "selected": false,
+    "katapult": true
   },
   {
     "title": "A new era for ocean power",
@@ -72,9 +75,10 @@
     "rating": 9,
     "platform": "YouTube",
     "url": "https://youtu.be/YQpPQ5hS4IY?si=Ju8cUmw6wD93GGjj",
-    "image": "assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
+    "image": "/assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
     "featured": false,
-    "selected": true
+    "selected": true,
+    "katapult": true
   },
   {
     "title": "Storing sunshine with air and water",
@@ -82,7 +86,7 @@
     "length": "2 min",
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/kyleoberholzer_compressed-air-energy-storage-has-a-thermodynamics-activity-7485954484515463169-UGuu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
-    "image": "assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
+    "image": "/assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
     "featured": false,
     "selected": true
   },
@@ -92,7 +96,7 @@
     "length": "30 min",
     "platform": "YouTube",
     "url": "https://youtu.be/6CPyxGxHNDs?si=5ZGWf_Iw-N4pxf4D",
-    "image": "assets/images/portfolio/gkinetic-energy-from-slow-flowing-rivers.jpg",
+    "image": "/assets/images/portfolio/gkinetic-energy-from-slow-flowing-rivers.jpg",
     "featured": false,
     "selected": true
   },
@@ -102,7 +106,7 @@
     "length": "2 min",
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/kyleoberholzer_can-we-harvest-energy-from-rivers-without-activity-7475488430152454144-Yaqg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
-    "image": "assets/images/portfolio/gkinetic-river-energy-without-dams.jpg",
+    "image": "/assets/images/portfolio/gkinetic-river-energy-without-dams.jpg",
     "featured": false,
     "selected": false
   },
@@ -113,7 +117,7 @@
     "note": "9,000+ views",
     "platform": "YouTube",
     "url": "https://youtu.be/X1ap7VREz3M?si=AgBf2fQD4XhVqs0K",
-    "image": "assets/images/portfolio/carbolink-breathing-mast.jpg",
+    "image": "/assets/images/portfolio/carbolink-breathing-mast.jpg",
     "featured": false,
     "selected": true
   },
@@ -124,7 +128,7 @@
     "note": "1,500+ views",
     "platform": "YouTube",
     "url": "https://www.youtube.com/watch?v=yIhY4o5pFYg&t=14s",
-    "image": "assets/images/portfolio/hundested-hybrid-propulsion.jpg",
+    "image": "/assets/images/portfolio/hundested-hybrid-propulsion.jpg",
     "featured": false,
     "selected": false
   },
@@ -135,7 +139,7 @@
     "note": "1,200+ views",
     "platform": "YouTube",
     "url": "https://youtu.be/31vlk7vCa-A?si=-9m3rly-Fhdn2gW2",
-    "image": "assets/images/portfolio/termodinamica-marine-ventilation.jpg",
+    "image": "/assets/images/portfolio/termodinamica-marine-ventilation.jpg",
     "featured": false,
     "selected": false
   },
@@ -146,7 +150,7 @@
     "note": "1,000+ views",
     "platform": "YouTube",
     "url": "https://youtu.be/3lGsGCC258Q?si=Tc3uRoeo1aFs8s9u",
-    "image": "assets/images/portfolio/reckmann-electric-furler.jpg",
+    "image": "/assets/images/portfolio/reckmann-electric-furler.jpg",
     "featured": false,
     "selected": false
   },
@@ -157,7 +161,7 @@
     "note": "2,000+ views",
     "platform": "YouTube",
     "url": "https://youtu.be/gYzcuEEzEBY?si=pYkXCzSzBOWbDKcM",
-    "image": "assets/images/portfolio/royal-maritiem-marine-glazing.jpg",
+    "image": "/assets/images/portfolio/royal-maritiem-marine-glazing.jpg",
     "featured": false,
     "selected": false
   },
@@ -168,7 +172,7 @@
     "note": "2,800+ views",
     "platform": "YouTube",
     "url": "https://youtu.be/MrSVeb8yguM?si=4xxpr2Yv2WBnn8fk",
-    "image": "assets/images/portfolio/mitosolar-pvt-panels-at-sea.jpg",
+    "image": "/assets/images/portfolio/mitosolar-pvt-panels-at-sea.jpg",
     "featured": false,
     "selected": false
   },
@@ -179,7 +183,7 @@
     "rating": 7,
     "platform": "YouTube",
     "url": "https://youtu.be/JO3vh1ASLRI?si=Pw50rTgd6unr4Qt_",
-    "image": "assets/images/portfolio/long-optimising-for-partial-shade.jpg",
+    "image": "/assets/images/portfolio/long-optimising-for-partial-shade.jpg",
     "featured": false,
     "selected": false
   },
@@ -189,7 +193,7 @@
     "length": "1 min",
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/foundation-zero_did-you-know-that-when-solar-panels-are-partially-activity-7310976373886496768-ANvr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
-    "image": "assets/images/portfolio/optimising-for-partial-shade-promo.jpg",
+    "image": "/assets/images/portfolio/optimising-for-partial-shade-promo.jpg",
     "featured": false,
     "selected": false
   },
@@ -199,7 +203,7 @@
     "length": "2 min",
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/posts/foundation-zero_building-a-brand-new-printed-circuit-board-activity-7328035527528505344-UKyI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
-    "image": "assets/images/portfolio/pcb-prototyping.jpg",
+    "image": "/assets/images/portfolio/pcb-prototyping.jpg",
     "featured": false,
     "selected": false
   },
@@ -210,7 +214,7 @@
     "rating": 5,
     "platform": "Instagram",
     "url": "https://www.instagram.com/reel/C9kOS7ftZR7/?hl=en",
-    "image": "assets/images/portfolio/making-power-while-sailing.jpg",
+    "image": "/assets/images/portfolio/making-power-while-sailing.jpg",
     "featured": false,
     "selected": false
   }
