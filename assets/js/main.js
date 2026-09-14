@@ -42,9 +42,9 @@ document.querySelectorAll('.audience-rotator-word').forEach(el => {
 const externalIconSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>`;
 
 // ---------- Build one card ----------
-function buildCard(item) {
+function buildCard(item, featured = item.featured) {
   const a = document.createElement('a');
-  a.className = 'card' + (item.featured ? ' wide' : '');
+  a.className = 'card' + (featured ? ' wide' : '');
   a.href = item.url;
   a.target = '_blank';
   a.rel = 'noopener noreferrer';
@@ -69,6 +69,13 @@ function buildCard(item) {
 // The grid's data-scope attribute controls what shows:
 //   "all" (used on work.html) — every item
 //   anything else (e.g. "selected", "katapult") — only items where item[scope] is true
+//
+// A scope can optionally override the default array order and the shared
+// "featured" hero card without affecting other pages, via two per-item
+// fields named after the scope: `${scope}Order` (a number — lower first)
+// and `${scope}Featured` (boolean — the one wide hero card for this grid).
+// Both are optional; a scope with neither just falls back to the JSON
+// array order and the shared "featured" flag.
 async function renderPortfolio() {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
@@ -80,11 +87,19 @@ async function renderPortfolio() {
 
     if (scope !== 'all') items = items.filter(item => item[scope]);
 
-    // Featured items first, preserving the rest of the given order
-    items.sort((a, b) => (b.featured === true) - (a.featured === true));
+    const orderKey = `${scope}Order`;
+    const featuredKey = `${scope}Featured`;
+    const hasScopedFeatured = items.some(item => featuredKey in item);
+    const isFeatured = item => hasScopedFeatured ? !!item[featuredKey] : !!item.featured;
+
+    if (items.some(item => orderKey in item)) {
+      items.sort((a, b) => (a[orderKey] ?? Infinity) - (b[orderKey] ?? Infinity));
+    }
+    // Featured item first, preserving the rest of the order set above
+    items.sort((a, b) => isFeatured(b) - isFeatured(a));
 
     grid.innerHTML = '';
-    items.forEach(item => grid.appendChild(buildCard(item)));
+    items.forEach(item => grid.appendChild(buildCard(item, isFeatured(item))));
   } catch (err) {
     grid.innerHTML = '<p style="color:#c7cdc7;">Could not load portfolio items. If you are viewing this file directly (file://), run a local server instead — see README.md.</p>';
     console.error(err);

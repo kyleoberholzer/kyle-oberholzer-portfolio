@@ -20,7 +20,8 @@
     "image": "/assets/images/portfolio/flocean-deep-sea-desalination.jpg",
     "featured": false,
     "selected": true,
-    "katapult": true
+    "katapult": true,
+    "katapultOrder": 4
   },
   {
     "title": "A revolutionary take on desalination",
@@ -33,7 +34,9 @@
     "image": "/assets/images/portfolio/desolenator-water-from-data-centers.jpg",
     "featured": false,
     "selected": false,
-    "katapult": true
+    "katapult": true,
+    "katapultOrder": 1,
+    "katapultFeatured": true
   },
   {
     "title": "Off grid — surplus energy",
@@ -65,7 +68,8 @@
     "image": "/assets/images/portfolio/solar-duck-solar-at-sea.jpg",
     "featured": false,
     "selected": false,
-    "katapult": true
+    "katapult": true,
+    "katapultOrder": 3
   },
   {
     "title": "A new era for ocean power",
@@ -78,7 +82,8 @@
     "image": "/assets/images/portfolio/mocean-hybrid-offshore-energy.jpg",
     "featured": false,
     "selected": true,
-    "katapult": true
+    "katapult": true,
+    "katapultOrder": 2
   },
   {
     "title": "Storing sunshine with air and water",
