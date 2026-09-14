@@ -93,7 +93,9 @@
     "url": "https://www.linkedin.com/posts/kyleoberholzer_compressed-air-energy-storage-has-a-thermodynamics-activity-7485954484515463169-UGuu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "/assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
     "featured": false,
-    "selected": true
+    "selected": true,
+    "katapult": true,
+    "katapultOrder": 5
   },
   {
     "title": "Energy from slow flowing rivers",
@@ -113,7 +115,9 @@
     "url": "https://www.linkedin.com/posts/kyleoberholzer_can-we-harvest-energy-from-rivers-without-activity-7475488430152454144-Yaqg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "/assets/images/portfolio/gkinetic-river-energy-without-dams.jpg",
     "featured": false,
-    "selected": false
+    "selected": false,
+    "katapult": true,
+    "katapultOrder": 6
   },
   {
     "title": "A world-first \"breathing mast\"",
