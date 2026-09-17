@@ -33,7 +33,7 @@
     "url": "https://youtu.be/0DzLiKUpkr0?si=siY65FdlKPJ4VOej",
     "image": "/assets/images/portfolio/desolenator-water-from-data-centers.jpg",
     "featured": false,
-    "selected": false,
+    "selected": true,
     "katapult": true,
     "katapultOrder": 1,
     "katapultFeatured": true
