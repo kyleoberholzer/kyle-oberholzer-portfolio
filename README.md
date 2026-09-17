@@ -28,6 +28,18 @@ field is `true` in their JSON entry. To make a new curated page, add a new
 boolean field to the items you want on it and point a grid's `data-scope` at
 that field name — no JS changes needed.
 
+**Ordering**: by default (`index.html` and `work.html`), items sort by the
+view count parsed out of their `"note"` field — most-viewed first, items
+with no recorded view count keep the JSON array's order and sort after
+every item that does have one. A scope can override this with its own
+manual order and its own hero card via two per-item fields named after the
+scope: `"${scope}Order"` (a number — lower shows first) and
+`"${scope}Featured"` (boolean — the one wide card for that grid). Both are
+optional and independent of the shared `"featured"` flag, so a curated page
+can have its own hero without changing the homepage's. See
+`conference/index.html`'s `katapultOrder` / `katapultFeatured` fields for
+an example.
+
 ## Previewing locally
 
 Because the page loads `portfolio-data.json` with `fetch()`, opening

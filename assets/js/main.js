@@ -70,12 +70,18 @@ function buildCard(item, featured = item.featured) {
 //   "all" (used on work.html) — every item
 //   anything else (e.g. "selected", "katapult") — only items where item[scope] is true
 //
-// A scope can optionally override the default array order and the shared
+// A scope can optionally override the default order and the shared
 // "featured" hero card without affecting other pages, via two per-item
 // fields named after the scope: `${scope}Order` (a number — lower first)
 // and `${scope}Featured` (boolean — the one wide hero card for this grid).
-// Both are optional; a scope with neither just falls back to the JSON
-// array order and the shared "featured" flag.
+// Both are optional. Without a scope-specific order, items sort by parsed
+// view count from their "note" field (most-viewed first), falling back to
+// the JSON array order for items with no view count on record.
+function parseViewCount(item) {
+  const match = item.note && item.note.match(/([\d,]+)\+?\s*views/i);
+  return match ? parseInt(match[1].replace(/,/g, ''), 10) : null;
+}
+
 async function renderPortfolio() {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
@@ -94,6 +100,8 @@ async function renderPortfolio() {
 
     if (items.some(item => orderKey in item)) {
       items.sort((a, b) => (a[orderKey] ?? Infinity) - (b[orderKey] ?? Infinity));
+    } else {
+      items.sort((a, b) => (parseViewCount(b) ?? -Infinity) - (parseViewCount(a) ?? -Infinity));
     }
     // Featured item first, preserving the rest of the order set above
     items.sort((a, b) => isFeatured(b) - isFeatured(a));
