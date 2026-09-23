@@ -95,21 +95,19 @@ python3 -m http.server 8000
 If the site is hosted on GitHub Pages, the update goes live within a minute
 or two of the push.
 
-## Before going fully live
+## Workflow
 
-- Not yet pushed to GitHub — working locally until the content and copy are
-  settled. See "Publishing" below when ready.
-- Add a `CNAME` file (just the domain name, one line) once you're ready to
-  point your custom domain at GitHub Pages, and update the DNS records at
-  your registrar accordingly.
+- Commit locally after every change. Push straight to `main` once Kyle
+  says to go live — **no feature branches, no pull requests, by default.**
+  GitHub Pages deploys `main` automatically within a minute or two of the
+  push, so pushing is a deliberate, confirmed step, not a routine part of
+  finishing a task.
+- Only create a branch/PR when explicitly asked for one — e.g. to stage a
+  bigger change and review its diff on GitHub before committing to it.
 
-## Publishing (when ready)
+## Publishing
 
-This repo is git-initialized locally but has no remote yet. To publish:
-
-```bash
-gh repo create kyleoberholzer/kyle-oberholzer-portfolio --public --source=. --remote=origin --push
-```
-
-Then enable GitHub Pages (Settings → Pages → Deploy from branch → `main` /
-`root`) so it goes live at `kyleoberholzer.github.io/kyle-oberholzer-portfolio`.
+Live at [kyleoberholzer.com](https://kyleoberholzer.com), served by GitHub
+Pages from the `main` branch (custom domain + DNS already configured via
+the `CNAME` file in this repo). Pushing to `main` is the only step needed
+to deploy — see "Workflow" above for how that push should happen.
