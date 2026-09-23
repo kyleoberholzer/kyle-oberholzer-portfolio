@@ -7,7 +7,7 @@
     "platform": "YouTube",
     "url": "https://youtu.be/S-HdzX0BZCc?si=8WQd9iwYv2RJj-VW",
     "image": "/assets/images/portfolio/pampus-off-grid-energy.jpg",
-    "featured": true,
+    "featured": false,
     "selected": true
   },
   {
@@ -226,5 +226,16 @@
     "image": "/assets/images/portfolio/making-power-while-sailing.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "Powered by cheap solar",
+    "format": "Mini-documentary",
+    "length": "15 min",
+    "rating": 10,
+    "platform": "YouTube",
+    "url": "https://youtu.be/GoWgHgIDzGk?si=_hQyAcV21xFU6-et",
+    "image": "/assets/images/portfolio/brineworks-powered-by-cheap-solar.jpg",
+    "featured": true,
+    "selected": true
   }
 ]
