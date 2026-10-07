@@ -103,11 +103,12 @@ async function renderPortfolio() {
     } else {
       items.sort((a, b) => (parseViewCount(b) ?? -Infinity) - (parseViewCount(a) ?? -Infinity));
     }
-    // Featured item first, preserving the rest of the order set above
+    // Featured items first, preserving the order set above. Only the very
+    // first card renders wide; any further featured items sort just after it.
     items.sort((a, b) => isFeatured(b) - isFeatured(a));
 
     grid.innerHTML = '';
-    items.forEach(item => grid.appendChild(buildCard(item, isFeatured(item))));
+    items.forEach((item, i) => grid.appendChild(buildCard(item, i === 0 && isFeatured(item))));
   } catch (err) {
     grid.innerHTML = '<p style="color:#c7cdc7;">Could not load portfolio items. If you are viewing this file directly (file://), run a local server instead — see README.md.</p>';
     console.error(err);

@@ -31,7 +31,10 @@ that field name — no JS changes needed.
 **Ordering**: by default (`index.html` and `work.html`), items sort by the
 view count parsed out of their `"note"` field — most-viewed first, items
 with no recorded view count keep the JSON array's order and sort after
-every item that does have one. A scope can override this with its own
+every item that does have one. Items flagged `"featured": true` always sort
+ahead of everything else (by views among themselves, then JSON order); only
+the very first card renders as the wide hero, the rest are normal cards
+placed right after it. A scope can override this with its own
 manual order and its own hero card via two per-item fields named after the
 scope: `"${scope}Order"` (a number — lower shows first) and
 `"${scope}Featured"` (boolean — the one wide card for that grid). Both are
@@ -79,8 +82,9 @@ python3 -m http.server 8000
    `"50,000+ views"`) appends after the length if there's a standout stat
    worth surfacing.
 
-   Set `"featured": true` on at most one item at a time — it renders as the
-   larger, wide card at the top of the grid (on whichever page shows it).
+   Set `"featured": true` to pin an item to the top of the grid (on whichever
+   page shows it). The first featured item renders as the larger, wide card;
+   any other featured items follow it as normal cards.
 
    Set `"selected": true` if this item should also appear in the homepage's
    "Selected work" teaser, not just on `work.html`. Every item always shows
