@@ -237,5 +237,16 @@
     "image": "/assets/images/portfolio/brineworks-powered-by-cheap-solar.jpg",
     "featured": true,
     "selected": true
+  },
+  {
+    "title": "Direct air capture is getting cheaper",
+    "format": "LinkedIn short",
+    "length": "2 min",
+    "rating": 10,
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/posts/foundation-zero_solar-powered-carbon-capture-activity-7513232043556835328-U0e2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
+    "image": "/assets/images/portfolio/brineworks-direct-air-capture-cheaper.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
