@@ -248,5 +248,16 @@
     "image": "/assets/images/portfolio/brineworks-direct-air-capture-cheaper.jpg",
     "featured": true,
     "selected": true
+  },
+  {
+    "title": "Carbon capture's solar-powered future",
+    "format": "Article",
+    "length": "1,500 words",
+    "rating": 7,
+    "platform": "Foundation Zero",
+    "url": "https://www.foundationzero.org/insights/brineworks",
+    "image": "/assets/images/portfolio/brineworks-carbon-capture-article.jpg",
+    "featured": false,
+    "selected": false
   }
 ]

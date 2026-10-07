@@ -49,7 +49,9 @@ function buildCard(item, featured = item.featured) {
   a.target = '_blank';
   a.rel = 'noopener noreferrer';
 
-  const ctaLabel = item.platform === 'LinkedIn' ? 'View on LinkedIn' : `Watch on ${item.platform}`;
+  const ctaLabel = item.format === 'Article' ? `Read on ${item.platform}`
+    : item.platform === 'LinkedIn' ? 'View on LinkedIn'
+    : `Watch on ${item.platform}`;
   const meta = item.note ? `${item.format} · ${item.length} · ${item.note}` : `${item.format} · ${item.length}`;
 
   a.innerHTML = `
