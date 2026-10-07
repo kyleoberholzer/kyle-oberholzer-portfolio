@@ -19,7 +19,7 @@
     "url": "https://youtu.be/YYgQE3t8AMI?si=rMVaIGTZfqdKcsO-",
     "image": "/assets/images/portfolio/flocean-deep-sea-desalination.jpg",
     "featured": false,
-    "selected": true,
+    "selected": false,
     "katapult": true,
     "katapultOrder": 4
   },
@@ -247,6 +247,6 @@
     "url": "https://www.linkedin.com/posts/foundation-zero_solar-powered-carbon-capture-activity-7513232043556835328-U0e2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJoZWsBoDWwDzSmK3vVsXLUhUH1A4wHI5Y",
     "image": "/assets/images/portfolio/brineworks-direct-air-capture-cheaper.jpg",
     "featured": false,
-    "selected": false
+    "selected": true
   }
 ]
