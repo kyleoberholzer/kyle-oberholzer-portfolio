@@ -86,16 +86,20 @@ function parseViewCount(item) {
 
 // ---------- Filter pills (only on pages with a #filter-pills container) ----------
 // Length is read from the "length" field ("5 min"); articles use word counts,
-// so they never count as video. Video of 5 min or more is "long".
+// so they never count as video. Video of 5 min or more is "long". Podcasts
+// have their own pill and are kept out of the long/short video pills.
 function lengthMinutes(item) {
   const match = /^(\d+)\s*min/i.exec(item.length || '');
   return match ? parseInt(match[1], 10) : null;
 }
 
+const isPodcast = item => item.format === 'Video podcast';
+
 const FILTERS = [
   { label: 'All', test: () => true },
-  { label: 'Long video', test: item => (lengthMinutes(item) ?? -1) >= 5 },
-  { label: 'Short video', test: item => { const m = lengthMinutes(item); return m !== null && m < 5; } },
+  { label: 'Long video', test: item => !isPodcast(item) && (lengthMinutes(item) ?? -1) >= 5 },
+  { label: 'Short video', test: item => { const m = lengthMinutes(item); return !isPodcast(item) && m !== null && m < 5; } },
+  { label: 'Podcast', test: isPodcast },
   { label: 'Writing', test: item => item.format === 'Article' },
 ];
 
