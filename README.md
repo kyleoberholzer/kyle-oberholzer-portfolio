@@ -43,6 +43,13 @@ can have its own hero without changing the homepage's. See
 `conference/index.html`'s `katapultOrder` / `katapultFeatured` fields for
 an example.
 
+**Filter pills**: any page with an empty `<div id="filter-pills">` above its
+grid gets a row of pills (currently only `work.html`). They're defined in the
+`FILTERS` list in `assets/js/main.js`: All, Long video (5+ min), Short video
+(under 5 min) and Writing (`"format": "Article"`). Length comes from each
+item's `"length"` field (`"5 min"`); articles use word counts, so they only
+ever match Writing. Filtering never changes which card is the wide hero.
+
 ## Previewing locally
 
 Because the page loads `portfolio-data.json` with `fetch()`, opening

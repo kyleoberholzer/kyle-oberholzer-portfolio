@@ -84,6 +84,39 @@ function parseViewCount(item) {
   return match ? parseInt(match[1].replace(/,/g, ''), 10) : null;
 }
 
+// ---------- Filter pills (only on pages with a #filter-pills container) ----------
+// Length is read from the "length" field ("5 min"); articles use word counts,
+// so they never count as video. Video of 5 min or more is "long".
+function lengthMinutes(item) {
+  const match = /^(\d+)\s*min/i.exec(item.length || '');
+  return match ? parseInt(match[1], 10) : null;
+}
+
+const FILTERS = [
+  { label: 'All', test: () => true },
+  { label: 'Long video', test: item => (lengthMinutes(item) ?? -1) >= 5 },
+  { label: 'Short video', test: item => { const m = lengthMinutes(item); return m !== null && m < 5; } },
+  { label: 'Writing', test: item => item.format === 'Article' },
+];
+
+function setupFilterPills(draw) {
+  const container = document.getElementById('filter-pills');
+  if (!container) return;
+  FILTERS.forEach((filter, n) => {
+    const pill = document.createElement('button');
+    pill.type = 'button';
+    pill.className = 'pill';
+    pill.textContent = filter.label;
+    pill.setAttribute('aria-pressed', n === 0 ? 'true' : 'false');
+    pill.addEventListener('click', () => {
+      container.querySelectorAll('.pill').forEach(p => p.setAttribute('aria-pressed', 'false'));
+      pill.setAttribute('aria-pressed', 'true');
+      draw(filter.test);
+    });
+    container.appendChild(pill);
+  });
+}
+
 async function renderPortfolio() {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
@@ -109,8 +142,15 @@ async function renderPortfolio() {
     // first card renders wide; any further featured items sort just after it.
     items.sort((a, b) => isFeatured(b) - isFeatured(a));
 
-    grid.innerHTML = '';
-    items.forEach((item, i) => grid.appendChild(buildCard(item, i === 0 && isFeatured(item))));
+    // The wide hero is decided once, from the unfiltered order, so a filter
+    // pill never promotes a different card to hero.
+    const hero = items.length && isFeatured(items[0]) ? items[0] : null;
+    const draw = test => {
+      grid.innerHTML = '';
+      items.filter(test).forEach(item => grid.appendChild(buildCard(item, item === hero)));
+    };
+    draw(FILTERS[0].test);
+    setupFilterPills(draw);
   } catch (err) {
     grid.innerHTML = '<p style="color:#c7cdc7;">Could not load portfolio items. If you are viewing this file directly (file://), run a local server instead — see README.md.</p>';
     console.error(err);
