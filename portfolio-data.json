@@ -279,5 +279,15 @@
     "image": "/assets/images/portfolio/seasonal-heat-storage-article.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "High tech telltales",
+    "format": "Article",
+    "length": "1,500 words",
+    "platform": "Foundation Zero",
+    "url": "https://foundationzero.org/insights/sail-trim-tech/",
+    "image": "/assets/images/portfolio/high-tech-telltales-article.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
