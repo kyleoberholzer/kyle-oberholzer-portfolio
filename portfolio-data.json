@@ -259,5 +259,15 @@
     "image": "/assets/images/portfolio/brineworks-carbon-capture-article.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "A smoother future for Antifouling coatings",
+    "format": "Article",
+    "length": "1,500 words",
+    "platform": "Foundation Zero",
+    "url": "https://foundationzero.org/insights/antifouling/",
+    "image": "/assets/images/portfolio/antifouling-smoother-future-article.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
