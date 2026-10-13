@@ -269,5 +269,15 @@
     "image": "/assets/images/portfolio/antifouling-smoother-future-article.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "Experimental seasonal heat storage",
+    "format": "Article",
+    "length": "1,500 words",
+    "platform": "Foundation Zero",
+    "url": "https://foundationzero.org/insights/geothermal-article/",
+    "image": "/assets/images/portfolio/seasonal-heat-storage-article.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
