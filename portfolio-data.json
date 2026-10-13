@@ -289,5 +289,15 @@
     "image": "/assets/images/portfolio/high-tech-telltales-article.jpg",
     "featured": false,
     "selected": false
+  },
+  {
+    "title": "Storing sunshine with air and water",
+    "format": "Video podcast",
+    "length": "31 min",
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=yzJ142UWVgo",
+    "image": "/assets/images/portfolio/shifted-energy-storing-sunshine.jpg",
+    "featured": false,
+    "selected": false
   }
 ]
